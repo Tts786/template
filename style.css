@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-  
 * {
   box-sizing: border-box;
   margin: 0;
@@ -474,14 +473,14 @@ ul.menu {
 }
 
 /*==========================Responsive=============================*/
-@media all and (max-width: 1172px) {
+ @media all and (max-width: 1172px) {
   .banner-text-item .form {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     width: 50%;
-  }
+  } 
 
   .banner-text-item .form input,
   .banner-text-item .form .date,
@@ -524,7 +523,7 @@ ul.menu {
   }
 }
 
-@media all and (max-width: 942px) {
+@media all and (mix-width: 600px) {
   .nav-bar {
     display: flex;
     flex-flow: column wrap;
@@ -663,9 +662,9 @@ ul.menu {
   }
 }
 
-@media all and (max-width:600px) {
+@media all and (max-width: 708px) {
   .footer {
-    width: 100%;
+    width: 90%;
     height: 670px;
     position: relative;
     display: flex;
@@ -674,5 +673,22 @@ ul.menu {
     align-items: center;
   }
 }
+  
+@media only screen and (min-width: 600px) {
+  .banner-text-item .form input {
+    width: 60%;
+  }
 
+  .banner-text-item .form .date {
+    width: 30%;
+  }
 
+  .banner-text-item .form .book {
+    width: 10%;
+    font-size: 14px;
+  }
+
+  .banner-heading h1 {
+    font-size: 60px;
+  }
+}
